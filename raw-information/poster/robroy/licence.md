@@ -1,0 +1,6 @@
+# rob roy poster
+
+* from 
+   * https://fineartamerica.com/featured/the-highland-shepherd-1859-rosa-bonheur.html
+   * https://www.google.com/imgres?imgurl=https%3A%2F%2Fimage.invaluable.com%2FhousePhotos%2FDargate%2F27%2F679027%2FH0089-L218309152.jpg&imgrefurl=https%3A%2F%2Fwww.invaluable.com%2Fauction-lot%2Frobert-griffing-american-born-1940-print-the-jaco-1112-c-24d48b182b&tbnid=rfbGaIkaVdK2VM&vet=12ahUKEwj14PSovcn8AhXnWaQEHUZfD1AQMygNegQIARA-..i&docid=fu94fQXAErUQ5M&w=1000&h=1232&q=The%20Jacobite%20Leaving%20Lo&ved=2ahUKEwj14PSovcn8AhXnWaQEHUZfD1AQMygNegQIARA-
+   * disbanded: https://www.google.com/imgres?imgurl=https%3A%2F%2Fd3d00swyhr67nd.cloudfront.net%2Fw1200h1200%2Fcollection%2FDUN%2FDAGM%2FDUN_DAGM_136_1912-001.jpg&imgrefurl=https%3A%2F%2Fartuk.org%2Fdiscover%2Fartworks%2Fdisbanded-92794&tbnid=99dpd3Vk3ys17M&vet=12ahUKEwiTwc3ovcn8AhUsW6QEHVYxAOkQMygAegUIARCXAQ..i&docid=_u_LHlZO6JiKJM&w=860&h=1200&q=Disbanded%2C%20by%20John%20Pettie&ved=2ahUKEwiTwc3ovcn8AhUsW6QEHVYxAOkQMygAegUIARCXAQ

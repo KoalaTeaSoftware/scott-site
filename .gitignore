@@ -102,3 +102,6 @@ dist
 
 # TernJS port file
 .tern-port
+/.idea/modules.xml
+/.idea/php.xml
+/.idea/scott-site.iml
