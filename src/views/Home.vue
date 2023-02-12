@@ -8,7 +8,8 @@ ToDo: layout on phones - hide carousels, or make the columns expand on small
         <div class="container welcome-1">
           <h1>Welcome</h1>
           <p>We absolutely adore the novels of Sir Walter Scott written and set in Scotland and elsewhere in previous
-            centuries.</p>
+            centuries.
+          </p>
           <p>We want to bring Scott's stories to life and make them more accessible to modern audiences.</p>
           <!--EditableDiv identity="welcome-1"></EditableDiv-->
 
@@ -17,21 +18,32 @@ ToDo: layout on phones - hide carousels, or make the columns expand on small
     </div>
     <div id="main" class="row">
       <div id="left-col" class="col-lg-4">
-        <h2>Behind the scenes "Hardy's&nbsp;Regrets"</h2>
-        <hr-bts-gallery></hr-bts-gallery>
+        <Carousel
+            identity="scottish-things"
+            path="assets/welc-caro"
+            :item-list=this.caroData
+        />
+
       </div>
       <div id="middle-col" class="col-lg-4 mainText">
         <!--        <EditableDiv identity="welcome-2"></EditableDiv>-->
-        <p>These wonderful novels and other stories by Scott are no longer taught and read in schools, nor in ninety nine percent of universities, either. Our Scottland Dramas Project (started 2023), along with its sister project, <a href="https://thedailydilettante.com/" target="_blank">The Wessex Dramas Project</a>  (founded 2022), seeks to disseminate these master story-tellers' works to the general public, before they become mere academic curiosities.
+        <p>These wonderful novels and other stories by Scott are no longer taught and read in schools, nor in ninety
+          nine percent of universities, either. Our Scottland Dramas Project (started 2023), along with its sister
+          project, <a href="https://thedailydilettante.com/" target="_blank">The Wessex Dramas Project</a> (founded
+          2022), seeks to disseminate these master story-tellers' works to the general public, before they become mere
+          academic curiosities.
         </p>
         <p>We are a grass-roots community project led by Rose and Ann-Marie Goldthorp, a mother-daughter team.
-          We will be working voluntarily with other mainly Scottish volunteers and charities to make these podcasts, and a short concept film.
+          We will be working voluntarily with other mainly Scottish volunteers and charities to make these podcasts, and
+          a short concept film.
         </p>
         <p>
-          Our first Scott feature film, Rob Roy (2025), will also be made on a sponsored, expenses-only basis. From the second feature film onwards, Ann-Marie and Rose
-         will then pre-sell DVDs etc.,  and raise sponsorship to make most of the rest of Scott's 'Scottish novels'.
-        If there then remains sufficient enthusiasm, the Scottland Dramas Project will continue with making Scott's
-        other stories as feature films, using 'pre-selling'; perhaps together with investment.</p>
+          Our first Scott feature film, Rob Roy (2025), will also be made on a sponsored, expenses-only basis. From the
+          second feature film onwards, Ann-Marie and Rose
+          will then pre-sell DVDs etc., and raise sponsorship to make most of the rest of Scott's 'Scottish novels'.
+          If there then remains sufficient enthusiasm, the Scottland Dramas Project will continue with making Scott's
+          other stories as feature films, using 'pre-selling'; perhaps together with investment.
+        </p>
       </div>
       <div id="blog-role" class="col-lg-4">
         <h2>Concept Short Film</h2>
@@ -58,10 +70,24 @@ ToDo: layout on phones - hide carousels, or make the columns expand on small
 <script>
 import EditableDiv from "@/components/EditableDiv.vue";
 import HrBtsGallery from "@/components/hr-bts-gallery.vue";
+import Carousel from "@/components/Carousel.vue";
 
 export default {
   name: 'Welcome',
-  components: {HrBtsGallery, EditableDiv},
+  components: {Carousel, HrBtsGallery, EditableDiv},
+  data() {
+    return {
+      caroData: [
+        {img: "sir-walter-scott.jpg", alt: "Sir Walter Scott"},
+        {img: "scottish_landscape_one.jpg", alt: "Scottish landscape one"},
+        {img: "Eilean_Donan_castle.jpg", alt: "Eilean Donan castle"},
+        {img: "Sir-Walter-Scott-books.jpg", alt: "Sir Walter Scott - Books"},
+        {img: "ladies-by-kitchen-fire.jpg", alt: "Ladies by the kithcen fire"},
+        {img: "reading-book.jpg", alt: "Reading book"},
+        {img: "scottish-landscape-two.jpg", alt: "Scottish landscape two"},
+      ]
+    }
+  }
 }
 </script>
 
