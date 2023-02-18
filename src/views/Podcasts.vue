@@ -4,8 +4,18 @@ The two may not easily correspond, so the read of the rss feed has to be careful
 
 <template>
   <div class="container" id="wessex-podcasts">
-    <h1>Scott's Dramas</h1>
-    <h2>A) Dramatic Podcast Releases in 2022</h2>
+    <h1>Podcast</h1>
+    <h2>A) Medley Shows:</h2>
+    <h3>i) Scott's Poetry: <span class="normalText">Our project welcomes your recordings on any of Scott's, or other British 'Romantic' poets' poetry.
+    These poems must be of six verses, or less, and in the English language (Excerpts accepted if entitled).
+      Added foley welcomed ... birdsong and streams! These readings are for our internet radio and also possibly our podcast.
+    Rose and her unfunded community group can offer no performance fees, however.</span>
+      <p>To upload your recordings ...</p>
+    </h3>
+    <h3>ii) Traditional Scottish / Celtic Music</h3>
+    <h3>iii) Scott Reviews / Essays</h3>
+    <h3>iv) Interviews</h3>
+    <h2>B) Dramatic Podcast Releases in 2023</h2>
     <div class="card series" v-for="book in books">
       <div class="card-body">
 
@@ -114,7 +124,7 @@ export default {
                   This may not be the order in which they appear in the feed
                   We can rely on all of the episodes being clustered together, however.
                    */
-                  const bookIndex = this.books.findIndex(candidateBook =>  candidateBook.seasonNumber === seasonNumber);
+                  const bookIndex = this.books.findIndex(candidateBook => candidateBook.seasonNumber === seasonNumber);
 
                   const episodeIndex = item.getElementsByTagName('itunes\:episode')[0].textContent - 1
                   const audInfo = item.getElementsByTagName('enclosure')[0]
@@ -141,6 +151,9 @@ export default {
 @import "src/assets/livery";
 
 #wessex-podcasts {
+  h3 {
+    text-align: left !important;
+  }
 
   .seasonPodcastList {
     margin: auto;

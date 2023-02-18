@@ -10,7 +10,6 @@ ToDo: layout on phones - hide carousels, or make the columns expand on small
           <p>We absolutely adore the novels of Sir Walter Scott written and set in Scotland and elsewhere in previous
             centuries.
           </p>
-          <p>We want to bring Scott's stories to life and make them more accessible to modern audiences.</p>
           <!--EditableDiv identity="welcome-1"></EditableDiv-->
 
         </div>
@@ -27,29 +26,23 @@ ToDo: layout on phones - hide carousels, or make the columns expand on small
       </div>
       <div id="middle-col" class="col-lg-4 mainText">
         <!--        <EditableDiv identity="welcome-2"></EditableDiv>-->
+        <p class="welcome-1">We want to bring Scott's stories to life and make them more accessible to modern audiences.</p>
         <p>These wonderful novels and other stories by Scott are no longer taught and read in schools, nor in ninety
           nine percent of universities, either. Our Scottland Dramas Project (started 2023), along with its sister
           project, <a href="https://thedailydilettante.com/" target="_blank">The Wessex Dramas Project</a> (founded
           2022), seeks to disseminate these master story-tellers' works to the general public, before they become mere
           academic curiosities.
         </p>
-        <p>We are a grass-roots community project led by Rose and Ann-Marie Goldthorp, a mother-daughter team.
-          We will be working voluntarily with other mainly Scottish volunteers and charities to make these podcasts, and
-          a short concept film.
-        </p>
-        <p>
-          Our first Scott feature film, Rob Roy (2025), will also be made on a sponsored, expenses-only basis. From the
-          second feature film onwards, Ann-Marie and Rose
-          will then pre-sell DVDs etc., and raise sponsorship to make most of the rest of Scott's 'Scottish novels'.
-          If there then remains sufficient enthusiasm, the Scottland Dramas Project will continue with making Scott's
-          other stories as feature films, using 'pre-selling'; perhaps together with investment.
+        <p>We are a grass-roots community project led by a young film maker, Rose Goldthorp.
+          We will be working voluntarily with other, mainly Scottish volunteers and charities to make these
+          dramatic podcasts, and
+          feature films.
         </p>
       </div>
       <div id="blog-role" class="col-lg-4">
         <h2>Concept Short Film</h2>
-        <!--        <img src="/assets/wessex/features/hardys-regrets/hardys-regrets-poster.jpg" class="img-fluid"-->
-        <!--             alt="Poster for Hardy's Regrets">
-        <div class="embed-responsive embed-responsive-16by9">
+        <img src="/assets/home/movie-poster.jpg" class="img-fluid" alt="Poster for Wandering Willie's Tale">
+        <!--div class="embed-responsive embed-responsive-16by9">
           <p class="help">Not playing nicely on your iPad?<br/>Try picture-in-picture, or maximising the player.</p>
           <video id="hrTrailer" controls preload="auto" class="embed-responsive-item w-100"
                  poster="/assets/wessex/features/hardys-regrets/posterImage.jpg">
@@ -57,7 +50,7 @@ ToDo: layout on phones - hide carousels, or make the columns expand on small
                     type="video/mp4">
           </video>
         </div>
-        <p class="CTA">The DVD can be purchased on <a href="https://gumroadrose.gumroad.com/l/hardysregretsdvd"
+      <p class="CTA">The DVD can be purchased on <a href="https://gumroadrose.gumroad.com/l/hardysregretsdvd"
                                                       target="_blank">Gumroad</a></p>
         <p class="CTA">The movie can also be downloaded (streamed) from <a
             href="https://gumroadrose.gumroad.com/l/hardysregretsdownload"

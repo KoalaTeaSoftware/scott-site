@@ -19,6 +19,10 @@
       ".git",
       "firebase-debug.log",
       "firebase-debug.*.log"
-    ]
+    ],
+    "source": "functions"
+  },
+  "storage": {
+    "rules": "storage.rules"
   }
 }

@@ -14,7 +14,7 @@
     "bootstrap": "^5.2.2",
     "chance": "^1.1.8",
     "core-js": "^3.26.0",
-    "firebase": "^9.9.4",
+    "firebase": "^9.17.1",
     "pinia": "^2.0.17",
     "vue": "^3.2.37",
     "vue-router": "^4.1.3",

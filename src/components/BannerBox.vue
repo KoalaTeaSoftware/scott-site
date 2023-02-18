@@ -12,23 +12,24 @@
             <img src="/assets/medallion.gif" alt="a medallion" class="img-fluid" style="padding-right: 0;">
           </div>
           <div class="col m-auto pl-0" id="log-line">
-            Sir Walter Scott's stories as films and podcasts
+            Ten feature films in ten years
           </div>
           <div class="col-1">
             <img src="/assets/medallion.gif" alt="a medallion" class="img-fluid" style="padding-left: 0;">
           </div>
-          <PrimaryNav/>
         </div>
+        <PrimaryNav/>
       </div>
-    <div class="col-2 d-none d-sm-block">
-      <!--img src="/assets/logo200.gif" class="img-fluid" alt="The Daily Dilettante logo"-->
-    </div>
+      <div class="col-2 d-none d-sm-block">
+        <!--img src="/assets/logo200.gif" class="img-fluid" alt="The Daily Dilettante logo"-->
+      </div>
     </div>
   </div>
 </template>
 
 <script>
 import PrimaryNav from "./PrimaryNav.vue";
+
 export default {
   name: "BannerBox",
   components: {PrimaryNav}
@@ -69,9 +70,10 @@ export default {
     }
 
     #log-line {
-      font-size: 1.5em;
+      font-size: 2.5em;
       line-height: 1.1em;
       color: $colour-banner-secondary-text;
+      text-shadow: 0 0 20px;
 
       img {
         position: unset;

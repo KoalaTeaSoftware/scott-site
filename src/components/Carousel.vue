@@ -2,8 +2,8 @@ Inputs
 identity: needs to be unique on your page
 path: where it will find the assets to display (not intelligence here, just give it a string)
 itemList: a list of objects, each with the attributes{
-filename (full, inc the extension)
-alt text
+  filename (full, inc the extension)
+  alt text
 interval (optional) related to the speed of the carousel
 
 Note that the code that build the list of carousel items add a class active to the very first item in the list

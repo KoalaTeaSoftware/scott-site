@@ -1,0 +1,9 @@
+total 176
+-rw-r--r-- 1 goldt 197609 21391 Feb 12 13:08 Eilean_Donan_castle.jpg
+-rw-r--r-- 1 goldt 197609 25597 Jan 22 06:48 Sir-Walter-Scott-books.jpg
+-rw-r--r-- 1 goldt 197609     0 Feb 12 13:21 files.txt
+-rw-r--r-- 1 goldt 197609 23312 Feb 12 13:10 ladies-by-kitchen-fire.jpg
+-rw-r--r-- 1 goldt 197609 21142 Dec 27 17:04 reading-book.jpg
+-rw-r--r-- 1 goldt 197609 34657 Feb 12 13:16 scottish-landscape-two.jpg
+-rw-r--r-- 1 goldt 197609 19316 Feb 12 13:17 scottish_landscape_one.jpg
+-rw-r--r-- 1 goldt 197609 17127 Dec 27 17:04 sir-walter-scott.jpg

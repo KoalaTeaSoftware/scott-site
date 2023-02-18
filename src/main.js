@@ -1,3 +1,5 @@
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
 import { createApp } from "vue";
 import App from "./App.vue";
 import router from "./router";
@@ -18,6 +20,7 @@ const auth = getAuth();
 const DB_HANDLE = firebase.firestore()
 export { auth, DB_HANDLE };
 
+/*
 firebase.auth().onAuthStateChanged((user) => {
   if (user) {
     // console.log(`[main.js > onAuthStateChanged] User is now [${JSON.stringify(user)}]`)
@@ -48,3 +51,4 @@ firebase.auth().onAuthStateChanged((user) => {
     // this.$router.push('/auth')
   }
 });
+ */
