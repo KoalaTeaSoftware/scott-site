@@ -57,11 +57,11 @@
 </template>
 
 <script>
-import EditableDiv from "@/components/EditableDiv.vue";
+// import EditableDiv from "@/components/EditableDiv.vue";
 
 export default {
   name: "About",
-  components: {EditableDiv},
+  // components: {EditableDiv},
   data() {
     return {
       aboutImgList1: [

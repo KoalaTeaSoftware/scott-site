@@ -10,11 +10,31 @@ const router = createRouter({
       component: HomeView
     },
     {
-      path: "/features",
-      name: "WessexFeatures",
       // route level code-splitting
       // this generates a separate chunk (About.[hash].js) for this route
       // which is lazy-loaded when the route is visited.
+      path: "/about",
+      name: "About",
+      component: () => import("../views/About.vue")
+    },
+    {
+      path: "/get-involved/supporter",
+      name: "involvedSupporter",
+      component: () => import("../views/InvolvedSupporter.vue")
+    },
+    {
+      path: "/get-involved/volunteer",
+      name: "involvedVolunteer",
+      component: () => import("../views/InvolvedVolunteer.vue")
+    },
+    {
+      path: "/get-involved/friend",
+      name: "involvedFriend",
+      component: () => import("../views/InvolvedFriend.vue")
+    },
+    {
+      path: "/features",
+      name: "WessexFeatures",
       component: () => import("../views/WessexFeatures.vue")
     },
     {
@@ -23,29 +43,24 @@ const router = createRouter({
       component: () => import("../views/Podcasts.vue")
     },
     {
-      path: "/about",
-      name: "About",
-      component: () => import("../views/About.vue")
-    },
-    {
       path: "/register",
       name: "register",
-      component: () => import("../views/Register.vue")
+      component: () => import("../views/admin/Register.vue")
     },
     {
       path: "/authorise",
       name: "authorise",
-      component: () => import("../views/Authorise.vue")
+      component: () => import("../views/admin/Authorise.vue")
     },
     {
       path: "/sign-in",
       name: "sign-in",
-      component: () => import("../views/SignIn.vue")
+      component: () => import("../views/admin/SignIn.vue")
     },
     {
       path: "/authorise",
       name: "authorise",
-      component: () => import("../views/Authorise.vue")
+      component: () => import("../views/admin/Authorise.vue")
     },
     {
       path: "/policies",
