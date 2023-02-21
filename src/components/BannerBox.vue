@@ -57,7 +57,8 @@ export default {
 
     img {
       padding: 0;
-      margin-left: 1em;
+      //margin-left: 1em;
+      margin: auto;
     }
 
     #title {
@@ -79,7 +80,7 @@ export default {
         position: unset;
         width: auto;
         margin: auto;
-        height: 1.25em;
+        //height: 1.25em;
       }
 
     }

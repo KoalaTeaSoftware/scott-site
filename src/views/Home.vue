@@ -15,7 +15,7 @@ ToDo: layout on phones - hide carousels, or make the columns expand on small
         </div>
       </div>
     </div>
-    <div id="main" class="row">
+    <div id="main" class="row  align-items-center">
       <div id="left-col" class="col-lg-4">
         <Carousel
             identity="scottish-things"

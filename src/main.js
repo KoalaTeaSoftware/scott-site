@@ -6,9 +6,11 @@ import router from "./router";
 import { createPinia } from "pinia";
 import { getAuth } from "firebase/auth";
 import { firebaseConfig } from "../firebaseConfig";
+// ToDo: import it in bits, rather than as 1 big lump
 import firebase from "firebase/compat";
 
-import { useUserStore } from "./stores/userState";
+// todo: see about the use of the store
+//import { useUserStore } from "./stores/userState";
 
 createApp(App).use(router).use(createPinia()).mount("#app");
 

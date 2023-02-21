@@ -16,7 +16,7 @@ export default {
   data() {
     return {
       imgList: [
-        "C4870BCE-CC74-4D2F-A8E4-13BE3F26C1A8.jpeg",
+        "crew.jpeg",
         "GRA_3790@460w.jpg",
         "GRA_1884@460w.jpg",
         "GRA_4447@460w.jpg",

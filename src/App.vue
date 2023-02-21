@@ -55,6 +55,7 @@ body {
       img, iframe, audio, video {
         border-radius: 5px;
         box-shadow: 5px 5px 10px $colour-body-text-shadow;
+        margin-bottom: 1em;
       }
 
       /* As the carousel-inner is tightly around its images, you will not be able to see the shadow that the image has.
