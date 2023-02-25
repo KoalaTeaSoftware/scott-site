@@ -38,37 +38,37 @@
         <td>Y</td>
       </tr>
       <tr>
-        <th scope="row">Invitations to buy tickets at international film festival screenings and awards</th>
+        <th scope="row">can buy tickets at international film festival screenings and awards</th>
         <td>Y</td>
         <td>Y</td>
         <td>Y</td>
       </tr>
       <tr>
-        <th scope="row">An early chance to buy tickets for the premières</th>
+        <th scope="row">have an early chance to buy tickets for the premières</th>
         <td>Y</td>
         <td>Y</td>
         <td>Y</td>
       </tr>
       <tr>
-        <th scope="row">Behind the scenes photographs of cast & crew, autographed by the director & cinematographer</th>
+        <th scope="row">get behind the scenes photographs of cast & crew, autographed by the director & cinematographer</th>
         <td></td>
         <td>Y</td>
         <td>Y</td>
       </tr>
       <tr>
-        <th scope="row">Discounted tickets for the premières</th>
+        <th scope="row">can buy discounted tickets for the premières</th>
         <td></td>
         <td>Y</td>
         <td>Y</td>
       </tr>
       <tr>
-        <th scope="row">On-set visits (scheduled & guided) with 1 friend</th>
+        <th scope="row">can make on-set visits (scheduled & guided) with 1 friend</th>
         <td></td>
         <td>Y</td>
         <td>Y</td>
       </tr>
       <tr>
-        <th scope="row">Behind the scenes photographs of lead actors autographed by those actors</th>
+        <th scope="row">receive behind the scenes photographs of lead actors autographed by those actors</th>
         <td></td>
         <td></td>
         <td>Y</td>

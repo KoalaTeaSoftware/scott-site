@@ -37,8 +37,7 @@
         </p>
         <p>
           Rose co-writes her screenplays with her assistant Ann-Marie Goldthorp, and then Rose directs and shoots these
-          films.
-          also helping with the production.
+          films, also helping with the production.
         </p>
       </div>
     </div>
@@ -65,8 +64,8 @@ export default {
   data() {
     return {
       aboutImgList1: [
-        {img:"crew@460w.jpg", alt:"A cast and crew"},
-        {img:"roseAndMikePortland@460w.jpg", alt:"Filming on portland"},
+        {img: "crew@460w.jpg", alt: "A cast and crew"},
+        {img: "roseAndMikePortland@460w.jpg", alt: "Filming on portland"},
       ],
       roseAsDataList: [
         {

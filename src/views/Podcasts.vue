@@ -3,108 +3,110 @@
 The two may not easily correspond, so the read of the rss feed has to be careful when associating episodes to books
 
 <template>
-  <div class="container" id="wessex-podcasts">
+  <div class="container" id="features">
     <h1>Podcast</h1>
-    <h2>A) Medley Shows:</h2>
-    <h3>i) Scott's Poetry: <span class="normalText">Our project welcomes your recordings on any of Scott's, or other British 'Romantic' poets' poetry.
-    These poems must be of six verses, or less, and in the English language (Excerpts accepted if entitled).
-      Added foley welcomed ... birdsong and streams! These readings are for our internet radio and also possibly our podcast.
-    Rose and her unfunded community group can offer no performance fees, however.</span>
-      <p>To upload your recordings ...</p>
-    </h3>
-    <h3>ii) Traditional Scottish / Celtic Music</h3>
-    <h3>iii) Scott Reviews / Essays</h3>
-    <h3>iv) Interviews</h3>
-    <h2>B) Dramatic Podcast Releases in 2023</h2>
-    <div class="card series" v-for="book in books">
-      <div class="card-body">
 
-        <div class="bookDetails">
-          <div class="row">
-            <div class="col-2">
-              <img class="img-fluid"
-                   :src="`/assets/wessex/podcasts/${book.poster}`"
-                   alt="Poster for the podcast"
-              >
-            </div>
-            <div class="col">
-              <h3 class="mt-0">{{ book.title }}<span class="dueDate">({{ book.dueDate }})</span></h3>
-              <p v-for="para in book.synopsis" class="card-text book_synopsis">{{ para }}</p>
-            </div>
-          </div>
-        </div>
+    <div class="bookGroup" v-for="group in bookGroups">
+      <h2>{{ group.heading }}</h2>
 
-        <div class="bookPodcasts">
-          <div class="seasonPodcastList card-group">
-            <div v-for="episode in book.episodeList" class="card podcastEpisode">
-              <div v-if="episode" class="m-auto">
-                <span v-if="episode.episodeNumber >= 0" class="episodeNumber">{{ episode.episodeNumber }}</span>
-                <audio controls preload="metadata" v-bind:src="episode.linkSrc">
-                  <source v-bind:src="episode.linkSrc" :type="episode.linkType">
-                  It appears that your browser can not play this,
-                  please try going to <a href="https://sites.libsyn.com/431487/site">https://sites.libsyn.com/431487/site</a>
-                  for the archive on out podcast server.
-                </audio>
+      <div class="card series" v-for="book in group.list">
+        <div class="card-body">
+
+          <div class="bookDetails">
+            <div class="row">
+              <div class="col-2">
+                <img class="img-fluid"
+                     :src="`/assets/features/${book.poster}`"
+                     alt="Poster for the podcast"
+                >
+              </div>
+              <div class="col">
+                <h3 class="mt-0">{{ book.title }}<span class="dueDate">({{ book.dueDate }})</span></h3>
+                <p v-for="para in book.synopsis" class="card-text book_synopsis">{{ para }}</p>
               </div>
             </div>
           </div>
+
+          <div class="bookPodcasts">
+            <div class="seasonPodcastList card-group">
+              <div v-for="episode in book.episodeList" class="card podcastEpisode">
+                <div v-if="episode" class="m-auto">
+                  <span v-if="episode.episodeNumber >= 0" class="episodeNumber">{{ episode.episodeNumber }}</span>
+                  <audio controls preload="metadata" v-bind:src="episode.linkSrc">
+                    <source v-bind:src="episode.linkSrc" :type="episode.linkType">
+                    It appears that your browser can not play this,
+                    please try going to <a href="https://sites.libsyn.com/431487/site">https://sites.libsyn.com/431487/site</a>
+                    for the archive on out podcast server.
+                  </audio>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row align-items-center" v-if="book.screenplayLink">
+            <a :href="book.screenplayLink"
+               target="_blank"
+               class="list-item-additional-data ext-link"
+               title="See the screenplay in a new tab"
+            >Click here to read the feature's screenplay</a>
+          </div>
+
         </div>
-
-        <div class="row align-items-center">
-          <a :href="book.screenplayLink"
-             target="_blank"
-             class="list-item-additional-data ext-link"
-             title="See the screenplay in a new tab"
-          >Click here to read the feature's screenplay</a>
-        </div>
-
-      </div>
-    </div><!-- ends card body -->
-
+      </div><!-- ends card body -->
+    </div>
   </div>
 </template>
 
 <script>
 
 export default {
-  name: "WessexPodcasts",
+  name: "podcasts",
   data() {
     return {
-      books: [
+      bookGroups: [
         {
-          title: "A Laodicean",
-          poster: "a-laodicean/poster.jpg",
-          dueDate: "Starts end Nov.",
-          synopsis: ["George Somerset, a new Architecture graduate, asks to sketch the interior of a castle. He ends up falling in love with its millionaire owner, Paula Power: a very 'Modern Miss' with decided opinions of her own.",
-            "Unfortunately there are malignant influences amongst the former aristocratic castle-owners, and the course of love does not run so smooth."
+          heading: "Audio Plays for 2024",
+          list: [
+            {
+              title: "Waverley",
+              poster: "movie-poster-waverley.jpg",
+              dueDate: "Starts Oct. 2024",
+              synopsis: ["Edward Waverley, an English gentleman of honour, has an officer's commission in the army.",
+                "He is on holiday with family friends in Scotland when Jacobite uprising of 1745 challenges his honour and loyalty."
+              ],
+              seasonNumber: 1,
+              episodeList: [],
+              screenplayLink: ""
+            },
+            {
+              title: "Guy Mannering",
+              poster: "movie-poster-guy-mannering.jpg",
+              dueDate: "Start Mar. 2024",
+              synopsis: ["Harry Bertram, son of the Laird of Ellangowan, is kidnapped as a boy by the smuggler Dirk Hatteraick and carried off to Holland.",
+                "When he comes back to Scotland to court his love, he does not realise that he has previously met her forbidding father."
+              ],
+              seasonNumber: 2,
+              episodeList: [],
+              screenplayLink: ""
+            },
           ],
-          seasonNumber: 3,
-          episodeList: [],
-          screenplayLink: "https://www.dropbox.com/s/zbg3snqs8vyn49p/2021-12-28%20A%20Laodicean%20-%20podcasted.pdf?dl=0"
         },
         {
-          title: "The Hand of Ethelberta",
-          poster: "the-hand-of-ethelberta/thumbnail.png",
-          dueDate: "Starts end May",
-          synopsis: ["Ethelberta, is an ex-governess from a large servant family. She is already (at 21 years old) widowed, after having married Lady Petherwin's son. When her mother-in-law dies, she attempts to earn her living, dramatising her own poetry. In London, she moves her many siblings, and mother, into her house, passing them off as her own servants in an attempt to disguise her straitened means.",
-            "Unfortunately, her young sister, Picotee, falls In love with one of Ethelbert's suitors. Complications ensue."
+          heading: "Audio Plays for 2023",
+          list: [
+            {
+              title: "Scott's Rob Roy",
+              poster: "movie-poster-rob-roy.jpg",
+              dueDate: "Starts Nov. 2023.",
+              synopsis: ["Frank unwilling to join his father's business is banished to Northumberland.",
+                "After his father's business is attacked, Frank races to Scotland to find the culprit."
+              ],
+              seasonNumber: 3,
+              episodeList: [],
+              screenplayLink: ""
+            },
           ],
-          seasonNumber: 2,
-          episodeList: [],
-          screenplayLink: "https://www.dropbox.com/s/sx6e2dcc6y7bv3p/The%20Hand%20Of%20Ethelberta.pdf?dl=0"
-        },
-        {
-          title: "Desperate Remedies",
-          poster: "desperate-remedies/desperate-remedies-poster.jpg",
-          dueDate: "Starts end Jan",
-          synopsis: ["Cytherea, an orphaned teenage girl, is forced to become a paid companion to a wealthy woman, Miss Aldclyffe. Cytherea’s fiancé is tricked away from her, and she is pressured into marrying Miss Aldclyffe’s own illegitimate, already-married son.",
-            "Cytherea desperately tries to discover if she, herself, truly is married, or not, and how many “wives” are actually involved ….. all before this heir gets his hands on her"
-          ],
-          seasonNumber: 1,
-          episodeList: [],
-          screenplayLink: "https://www.dropbox.com/s/8678tahc96nqulf/Desperate%20remedies%20-%20podcasted%20-%20screenplay.pdf?dl=0"
-        },
-
+        }
       ]
     }
   },
@@ -150,9 +152,13 @@ export default {
 <style lang="scss">
 @import "src/assets/livery";
 
-#wessex-podcasts {
+#features {
   h3 {
     text-align: left !important;
+  }
+
+  .bookGroup{
+    padding-bottom: 1em;
   }
 
   .seasonPodcastList {

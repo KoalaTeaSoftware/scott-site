@@ -15,8 +15,9 @@ ToDo: layout on phones - hide carousels, or make the columns expand on small
         </div>
       </div>
     </div>
-    <div id="main" class="row  align-items-center">
+    <div id="main" class="row">
       <div id="left-col" class="col-lg-4">
+        <h2>&nbsp;</h2>
         <Carousel
             identity="scottish-things"
             path="assets/welc-caro"
@@ -26,35 +27,23 @@ ToDo: layout on phones - hide carousels, or make the columns expand on small
       </div>
       <div id="middle-col" class="col-lg-4 mainText">
         <!--        <EditableDiv identity="welcome-2"></EditableDiv>-->
-        <p class="welcome-1">We want to bring Scott's stories to life and make them more accessible to modern audiences.</p>
-        <p>These wonderful novels and other stories by Scott are no longer taught and read in schools, nor in ninety
-          nine percent of universities, either. Our Scottland Dramas Project (started 2023), along with its sister
-          project, <a href="https://thedailydilettante.com/" target="_blank">The Wessex Dramas Project</a> (founded
-          2022), seeks to disseminate these master story-tellers' works to the general public, before they become mere
-          academic curiosities.
+        <p class="welcome-1">We want to bring Scott's stories to life and make them more accessible to modern
+          audiences.
         </p>
         <p>We are a grass-roots community project led by a young film maker, Rose Goldthorp.
           We will be working voluntarily with other, mainly Scottish volunteers and charities to make these
-          dramatic podcasts, and
-          feature films.
+          audio plays, and feature films.
         </p>
+        <p>These wonderful novels and other stories by Scott are no longer taught and read in schools, nor in ninety
+          nine percent of universities, either. Our Scottland Dramas Project (started 2023), along with its sister
+          project, <a href="https://thedailydilettante.com/" target="_blank">The Wessex Dramas Project</a> (founded
+          2022), seeks to spread these master story-tellers' works to the general public, before they are forgotten.
+        </p>
+
       </div>
       <div id="blog-role" class="col-lg-4">
         <h2>Concept Short Film</h2>
-        <img src="/assets/home/movie-poster.jpg" class="img-fluid" alt="Poster for Wandering Willie's Tale">
-        <!--div class="embed-responsive embed-responsive-16by9">
-          <p class="help">Not playing nicely on your iPad?<br/>Try picture-in-picture, or maximising the player.</p>
-          <video id="hrTrailer" controls preload="auto" class="embed-responsive-item w-100"
-                 poster="/assets/wessex/features/hardys-regrets/posterImage.jpg">
-            <source src="/assets/wessex/features/hardys-regrets/hardysRegretsTrailer@720p30.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-      <p class="CTA">The DVD can be purchased on <a href="https://gumroadrose.gumroad.com/l/hardysregretsdvd"
-                                                      target="_blank">Gumroad</a></p>
-        <p class="CTA">The movie can also be downloaded (streamed) from <a
-            href="https://gumroadrose.gumroad.com/l/hardysregretsdownload"
-            target="_blank">Gumroad</a></p>-->
+        <img src="/assets/home/movie-poster.jpg" class="img-fluid w-50" alt="Poster for Wandering Willie's Tale">
       </div>
     </div>
   </div>
