@@ -66,6 +66,8 @@ export default {
       aboutImgList1: [
         {img: "crew@460w.jpg", alt: "A cast and crew"},
         {img: "roseAndMikePortland@460w.jpg", alt: "Filming on portland"},
+        {img: "mayors@460w.jpg", alt: "Premier on Portland"},
+        {img: "on-stage@460w.jpg", alt: "Its a wrap"},
       ],
       roseAsDataList: [
         {
