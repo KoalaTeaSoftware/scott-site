@@ -1,7 +1,5 @@
 Rather than load this component with the need to get a good version of the store, and
 talk to it (which seems to be a challenge too big to enjoy), pass it a dynamic property
-
-# ToDo: See https://getbootstrap.com/docs/5.2/components/dropdowns/ for how to re-build this
 <template>
   <nav class="navbar navbar-expand-lg">
 
@@ -18,7 +16,7 @@ talk to it (which seems to be a challenge too big to enjoy), pass it a dynamic p
       <div class="navbar-nav m-auto">
         <RouterLink to="/" class="nav-item active">Welcome</RouterLink>
         <RouterLink class="nav-item" to="/podcasts">Podcasts</RouterLink>
-        <RouterLink class="nav-item" to="/shorts">Short Films</RouterLink>
+        <RouterLink class="nav-item" to="/shorts">Short Film</RouterLink>
         <RouterLink class="nav-item" to="/features">Feature Films</RouterLink>
         <RouterLink class="nav-item" to="/about">About</RouterLink>
         <a class="nav-item dropdown">
@@ -57,7 +55,8 @@ export default {
     color: $colour-banner-primary-text;
     font-weight: bold;
   }
-
+  // It complains that the active link style is unused - it is, the Bootstrap java adds it
+  //noinspection CssUnusedSymbol
   .router-link-active {
     font-weight: bolder;
     text-decoration: none;

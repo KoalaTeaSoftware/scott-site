@@ -5,14 +5,14 @@
       <nav class="navbar  navbar-expand-sm">
         <div class="navbar-nav">
           <!-- anchor tags are fatal to the session, so use router links -->
-          <RouterLink to="policies" class="nav-item active">Policies</RouterLink>
-          <RouterLink to="contact" class="nav-item">Contact</RouterLink>
+          <RouterLink to="/policies" class="nav-item active">Policies</RouterLink>
+          <RouterLink to="/contact" class="nav-item">Contact</RouterLink>
 
           <a v-if="amLoggedIn" id="logoutLink" class="nav-item" @click="logOut">Log Out</a>
-          <RouterLink v-else to="sign-in" class="nav-item">Sign In</RouterLink>
+          <RouterLink v-else to="/sign-in" class="nav-item">Sign In</RouterLink>
 
-          <RouterLink v-if="amLoggedIn" to="register" class="nav-item">Register</RouterLink>
-          <RouterLink v-if="amLoggedIn" to="authorise" class="nav-item">Roles</RouterLink>
+          <RouterLink v-if="amLoggedIn" to="/register" class="nav-item">Register</RouterLink>
+          <RouterLink v-if="amLoggedIn" to="/authorise" class="nav-item">Roles</RouterLink>
         </div>
       </nav>
     </div>
@@ -34,6 +34,8 @@ export default {
       userStore.$reset();
       getAuth().signOut();
       // irrespective of whether they have really signed-out, make it seem that they have
+      // Code inspector can't resolve this, but it works fine
+      // noinspection JSUnresolvedFunction
       this.$router.push({path: "/"});
     }
   },

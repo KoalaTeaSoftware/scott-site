@@ -5,7 +5,7 @@
     <div class="row align-items-center">
       <p>
         The Scottland Dramas Project is a grassroots community group lead by Rose Goldthorp, a young filmmaker who will
-        adapt and produce ten of Scott's novels in ten years.
+        adapt and produce ten of Scott's novels as feature films and audio plays in ten years.
       </p>
       <div class="col" v-for="imgSrc in aboutImgList1">
         <img class="img-fluid" :src="'/assets/about/people/' + imgSrc.img" :alt="imgSrc.alt">
@@ -129,15 +129,6 @@ export default {
   #roseBioBlock {
     img {
       margin-bottom: 0.5em;
-    }
-  }
-
-  .rose-as-text {
-    p {
-      text-align: center;
-      // this is required because the nice shadow around the iframe makes the caption below it look cramped
-      // sadly, I can't target that caption any better than this, but collateral damage seems negligible
-      margin-top: 0.5em;
     }
   }
 }

@@ -102,6 +102,7 @@
     font-style: italic;
   }
   // the default colours are a bit primary, use our own livery
+  //noinspection CssUnusedSymbol
   .bg-success {
     background-color: $colour-banner-background!important;
     color: $colour-banner-primary-text;
@@ -112,7 +113,7 @@
 
 <script>
 import formConstraints from '../../functions/email.config.json';
-import LoadingSpinner from "@/components/LoadingSpinner.vue";
+import LoadingSpinner from "@jsconcomponents/LoadingSpinner.vue";
 
 const mailService = "https://us-central1-daily-d-7b01b.cloudfunctions.net/sendMail"
 
@@ -134,6 +135,12 @@ export default {
       remainingMsgChars: formConstraints.msgLengthMax,
       busy:false
     }
+  },
+  mounted() {
+    // const currentDate = new Date();
+    const subj = new URLSearchParams(window.location.search).get('subject')
+    if (subj && subj.length > 0)
+      this.formData.subject = subj.substring(0, (this.constraints.subjectLengthMax - 1))
   },
   methods: {
     showCount: function () {
@@ -188,7 +195,7 @@ export default {
                 }))
               }
             })
-        // for some reasaon, this catch seems to get called, even if all goes well
+        // for some reason, this catch seems to get called, even if all goes well
         // .catch(reason => {
         //   console.log("Crashed sending, Reason is not null: [" + reason !== null + "]");
         //   console.log("Crashed sending, Sending email appears to have failed: [" + reason);
@@ -283,12 +290,6 @@ export default {
           (this.formData.message.match(this.constraints.msgRegexp) != null)
       )
     },
-    mounted() {
-      // const currentDate = new Date();
-      const subj = new URLSearchParams(window.location.search).get('subject')
-      if (subj && subj.length > 0)
-        this.formData.subject = subj.substr(0, (this.constraints.subjectLengthMax - 1))
-    }
   }
 }
 </script>
