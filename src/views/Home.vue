@@ -16,7 +16,7 @@ ToDo: layout on phones - hide carousels, or make the columns expand on small
       </div>
     </div>
     <div id="main" class="row">
-      <div id="left-col" class="col-lg-4">
+      <div id="left-col" class="col-lg-3">
         <h2>&nbsp;</h2>
         <Carousel
             identity="scottish-things"
@@ -25,7 +25,7 @@ ToDo: layout on phones - hide carousels, or make the columns expand on small
         />
 
       </div>
-      <div id="middle-col" class="col-lg-4 mainText">
+      <div id="middle-col" class="col-lg mainText">
         <!--        <EditableDiv identity="welcome-2"></EditableDiv>-->
         <p class="welcome-1">We want to bring Scott's stories to life and make them more accessible to modern
           audiences.
@@ -41,9 +41,9 @@ ToDo: layout on phones - hide carousels, or make the columns expand on small
         </p>
 
       </div>
-      <div id="blog-role" class="col-lg-4">
+      <div id="blog-role" class="col-lg-2">
         <h2>Concept Short Film</h2>
-        <img src="/assets/home/movie-poster.jpg" class="img-fluid w-50" alt="Poster for Wandering Willie's Tale">
+        <img src="/assets/home/movie-poster.jpg" class="img-fluid w-75" alt="Poster for Wandering Willie's Tale">
       </div>
     </div>
   </div>
