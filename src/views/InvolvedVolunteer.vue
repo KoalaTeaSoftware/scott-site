@@ -32,7 +32,7 @@
         </p>
       </div>
     </div>
-    <p class="lead">To volunteer please <a href="/contact?subject=Please tell me about volunteering to help the project">make contact using our contact page</a></p>
+    <p class="lead">To volunteer please <a href="/contact?subject=Please tell me about volunteering">make contact using our contact page</a></p>
   </div>
 </template>
 
