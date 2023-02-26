@@ -113,7 +113,7 @@
 
 <script>
 import formConstraints from '../../functions/email.config.json';
-import LoadingSpinner from "@jsconcomponents/LoadingSpinner.vue";
+import LoadingSpinner from "@/components/LoadingSpinner.vue";
 
 const mailService = "https://us-central1-daily-d-7b01b.cloudfunctions.net/sendMail"
 
