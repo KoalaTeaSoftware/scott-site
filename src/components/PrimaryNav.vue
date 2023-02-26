@@ -21,15 +21,15 @@ talk to it (which seems to be a challenge too big to enjoy), pass it a dynamic p
         <RouterLink class="nav-item" to="/shorts">Short Films</RouterLink>
         <RouterLink class="nav-item" to="/features">Feature Films</RouterLink>
         <RouterLink class="nav-item" to="/about">About</RouterLink>
-        <div class="nav-item">
+        <a class="nav-item dropdown">
           <a class="nav-item dropdown-toggle" id="getInvolved" data-bs-toggle="dropdown" aria-expanded="false">Get
             Involved</a>
           <div class="dropdown-menu" aria-labelledby="getInvolved">
-            <RouterLink class="nav-item" to="/get-involved/volunteer">Volunteer</RouterLink>
-            <RouterLink class="nav-item" to="/get-involved/supporter">Supporter</RouterLink>
-            <RouterLink class="nav-item" to="/get-involved/friend">Friend</RouterLink>
+            <RouterLink class="nav-item dropdown-item" to="/get-involved/volunteer">as a Volunteer</RouterLink>
+            <RouterLink class="nav-item dropdown-item" to="/get-involved/supporter">as a Supporter</RouterLink>
+            <RouterLink class="nav-item dropdown-item" to="/get-involved/friend">as a Friend</RouterLink>
           </div>
-        </div>
+        </a>
       </div>
     </div>
   </nav>
