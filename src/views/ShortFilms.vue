@@ -8,8 +8,8 @@
       <div class="col">
         <h2>Wandering Willie's Tale</h2>
         <p>In this short ghost story, a tenant farmer desperately tries to assure the recent heir that he has, indeed,
-          paid his yearly rent. Steenie has problems persuading people to believe him ... and then things get very
-          strange, indeed.
+          paid his yearly rent. Steenie has problems persuading people to believe him, however ... and then things get
+          very strange, indeed.
         </p>
         <p>We will be making this 'concept' short film as a 'no budget' short, in summer '24, working with other
           volunteers, if we can pre-sell enough DVDs / downloads to cover Ann-Marie and Rose's expenses (expenses only:

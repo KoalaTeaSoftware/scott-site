@@ -29,11 +29,10 @@
         </p>
         <p>
           Rose has already started her Wessex Dramas project (2022) which has made one Thomas Hardy feature film and
-          three
-          seasons of audio dramas
+          three seasons of audio dramas
           (<a href="https://thedailydilettante.com/podcasts" target="_blank">https://thedailydilettante.com/podcasts</a>).
-          Rose hopes to work with different Scottish charities and their members, as she does in Dorset. So, these films
-          will be 95% Scottish, in terms of source material, locations, casts, and crews.
+          Rose hopes to work with different Scottish charities and their members, as she does in Dorset. So, these
+          Scottland films will be 95% Scottish, in terms of source material, locations, casts, and crews.
         </p>
         <p>
           Rose co-writes her screenplays with her assistant Ann-Marie Goldthorp, and then Rose directs and shoots these
@@ -56,11 +55,8 @@
 </template>
 
 <script>
-// import EditableDiv from "@/components/EditableDiv.vue";
-
 export default {
   name: "About",
-  // components: {EditableDiv},
   data() {
     return {
       aboutImgList1: [
@@ -95,10 +91,6 @@ export default {
           img: "",
           caption: "Rose as Writer",
           body: "<p>As a sole feature-film screenplay writer, Rose wrote five screenplays in her teen years. " +
-              "As a feature-film co-screenwriter, Rose has also written another twelve feature screenplays" +
-              " (between 19 to 23 years old). As a child, Rose wrote eighteen short films, of which three were written for school." +
-              "</p>" +
-              "<p>As a sole feature-film screenplay writer, Rose wrote five screenplays in her teen years. " +
               "As a feature-film co-screenwriter, Rose has also written another twelve feature screenplays " +
               "(between 19 to 23 years old). As a child, Rose wrote eighteen short films, of which three were written for school." +
               "</p>" +
@@ -123,14 +115,6 @@ export default {
 @import "src/assets/livery";
 
 #about {
-  // otherwise the hero image is tightly under the banner
-  padding-top: 0.5em;
-
-  #roseBioBlock {
-    img {
-      margin-bottom: 0.5em;
-    }
-  }
 }
 
 </style>

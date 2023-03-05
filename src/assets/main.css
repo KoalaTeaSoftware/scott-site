@@ -1,6 +1,6 @@
 @import "./base.css";
 
-#app {
+/*#app {
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
@@ -8,12 +8,16 @@
   font-weight: normal;
 }
 
-a,
-.green {
-  text-decoration: none;
-  color: hsla(160, 100%, 37%, 1);
-  transition: 0.4s;
-}
+
+5th March 2023.
+I don't know how these got here, or what they are for, so commenting
+ToDo: completely remove them when they prove to be irrelevant
+
+a, .green {*/
+/*  text-decoration: none;*/
+/*  color: hsla(160, 100%, 37%, 1);*/
+/*  transition: 0.4s;*/
+/*}
 
 @media (hover: hover) {
   a:hover {
@@ -33,3 +37,4 @@ a,
     padding: 0 2rem;
   }
 }
+*/

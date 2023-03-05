@@ -8,7 +8,8 @@
       <div class="col">
         <h2>Scott's Rob Roy</h2>
         <p>
-          The first feature film the Scottland Dramas Project is adapting and producing is <strong>Rob Roy</strong> (2025).
+          The first feature film the Scottland Dramas Project is adapting and producing is <strong>Rob Roy</strong>
+          (2025).
         </p>
         <p>The Project is then moving on to the rest of Scott's 'Scottish novels', such as,
           <strong>Guy Mannering</strong> (2026), followed by <strong>Waverly</strong> (2027). etc. Our tenth feature
@@ -22,6 +23,8 @@
           area.
         </p>
         <p class="lead">We do look forward to working with all of you 'Scottland' supporters!</p>
+        <p><b>Click <a href="https://www.dropbox.com/s/rssv60ipgvc7dsk/Scott%27s%20Rob%20Roy.pdf?dl=0" target="_blank">here</a>
+          to see the screenplay <em>still under development</em></b></p>
       </div>
     </div>
   </div>

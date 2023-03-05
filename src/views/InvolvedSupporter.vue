@@ -3,7 +3,7 @@
   <p>There are three tiers of supporter</p>
   <div class="container">
     <div class="row align-items-center">
-      <div class="col">
+      <div class="col-4">
         <img class="img-fluid" src="/assets/involved/supporters.jpg" alt="Filming on locations">
       </div>
       <div class="col">
@@ -80,11 +80,38 @@
             <td></td>
           </tr>
           </tbody>
+          <tfoot>
+          <tr>
+            <td></td>
+            <td>
+              <button class="branded-button">
+                <a href="/contact?subject=Please tell me how to become a gold supporter">
+                  Become&nbsp;a gold supporter&nbsp;for £199&nbsp;per&nbsp;year
+                </a>
+              </button>
+            </td>
+            <td>
+              <button class="branded-button">
+                <a href="/contact?subject=Please tell how to become a silver supporter">
+                  Become&nbsp;a silver supporter&nbsp;for £80&nbsp;per&nbsp;year
+                </a>
+              </button>
+            </td>
+            <td>
+              <button class="branded-button">
+                <a href="/contact?subject=Please tell how to become a bronze supporter">
+                  Become&nbsp;a bronze supporter&nbsp;for £20&nbsp;per&nbsp;year
+                </a>
+              </button>
+            </td>
+          </tr>
+          </tfoot>
         </table>
 
       </div>
     </div>
-    <p class="lead">To offer support please <a href="/contact?subject=Please tell me how to support the project">make contact using our contact page</a></p>
+    <p class="lead">To offer other support please <a href="/contact?subject=Please tell me how to support the project">
+      make contact using our contact page</a></p>
   </div>
 
 </template>

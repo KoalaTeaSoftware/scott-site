@@ -39,10 +39,13 @@ for this to give no pain.
                         <a :href="this.feed">
                           {{ feed }}
                         </a>
-                        for the archive on out podcast server.
+                        for the archive on our podcast server.
                       </audio>
                     </div>
                   </div>
+                  <p v-if="book.screenplayLink"><b>Click
+                    <a :href="book.screenplayLink" target="_blank" >here</a>
+                    to see the screenplay <span v-if="book.onGoing"><em>still under development</em> </span> </b></p>
                 </div>
                 <!-- end info for this book -->
               </div>
@@ -80,7 +83,8 @@ export default {
             "He is on holiday with family friends in Scotland when Jacobite uprising of 1745 challenges his honour and loyalty."
           ],
           episodeList: [],
-          screenplayLink: ""
+          screenplayLink: "",
+          onGoing: false
         },
         {
           displayGroup: 0,
@@ -92,7 +96,8 @@ export default {
             "When he comes back to Scotland to court his love, he does not realise that he has previously met her forbidding father."
           ],
           episodeList: [],
-          screenplayLink: ""
+          screenplayLink: "",
+          onGoing: false
         },
         {
           displayGroup: 1,
@@ -104,7 +109,8 @@ export default {
             "After his father's business is attacked, Frank races to Scotland to find the culprit."
           ],
           episodeList: [],
-          screenplayLink: ""
+          screenplayLink: "https://www.dropbox.com/s/rssv60ipgvc7dsk/Scott%27s%20Rob%20Roy.pdf?dl=0",
+          onGoing: true
         },
       ]
     }

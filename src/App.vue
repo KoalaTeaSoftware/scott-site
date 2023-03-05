@@ -52,14 +52,29 @@ body {
         color: $colour-body-text;
       }
 
-      img, iframe, audio, video {
+      img, iframe, audio, video, .branded-button {
         border-radius: 5px;
         box-shadow: 5px 5px 10px $colour-body-text-shadow;
         margin-bottom: 1em;
       }
 
+      .branded-button {
+        // also see that it gets the same shape as images because of the above
+        color: $colour-banner-primary-text;
+        background-color: $colour-banner-background;
+
+        a {
+          // need to put an a inside a branded-button otherwise we can not go to another page
+          // want the colour to come from the branded button that is surrounding the a
+          // want to take away various a-related attributes, however.
+          color: inherit;
+          text-decoration: none;
+        }
+      }
+
       /* As the carousel-inner is tightly around its images, you will not be able to see the shadow that the image has.
-       * Therefore give the carousel-inner (not the image) the attributes that provide the shadow */
+       * Therefore give the carousel-inner (not the image) the attributes that provide the shadow
+       */
       .carousel-inner {
         border-radius: 5px;
         box-shadow: 5px 5px 10px $colour-body-text-shadow;
