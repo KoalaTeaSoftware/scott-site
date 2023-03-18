@@ -19,6 +19,7 @@ talk to it (which seems to be a challenge too big to enjoy), pass it a dynamic p
         <RouterLink class="nav-item" to="/shorts">Short Film</RouterLink>
         <RouterLink class="nav-item" to="/features">Feature Films</RouterLink>
         <RouterLink class="nav-item" to="/about">About</RouterLink>
+        <RouterLink class="nav-item" to="/competition">Competition</RouterLink>
         <a class="nav-item dropdown">
           <a class="nav-item dropdown-toggle" id="getInvolved" data-bs-toggle="dropdown" aria-expanded="false">Get
             Involved</a>
@@ -61,6 +62,12 @@ export default {
     font-weight: bolder;
     text-decoration: none;
     font-style: italic;
+  }
+  // the normal padding either side of a dropdown item is 12px. Need to make it smaller because this
+  // seems to make it take up more width than other main menu items. 6px makes this less obvious
+  .dropdown-item{
+    padding-left: 6px;
+    padding-right: 6px; ;
   }
 
 }
