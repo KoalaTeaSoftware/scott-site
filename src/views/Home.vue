@@ -2,7 +2,7 @@ This works despite the fact that IntelliJ is confused by the tag in the HTML, an
 
 ToDo: layout on phones - hide carousels, or make the columns expand on small
 <template>
-  <div class="container-fluid" id="welcome">
+  <div class="container" id="welcome">
     <div id="title" class="row">
       <div class="col">
         <div class="container welcome-1">
