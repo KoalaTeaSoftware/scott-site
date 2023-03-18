@@ -105,3 +105,6 @@ dist
 /.idea/modules.xml
 /.idea/php.xml
 /.idea/scott-site.iml
+
+#firebase deployment cache
+.firebase/*.cache
