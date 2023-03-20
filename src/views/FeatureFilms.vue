@@ -23,7 +23,7 @@
           area.
         </p>
         <p class="lead">We do look forward to working with all of you 'Scottland' supporters!</p>
-        <p><b>Click <a href="https://www.dropbox.com/s/rssv60ipgvc7dsk/Scott%27s%20Rob%20Roy.pdf?dl=0" target="_blank">here</a>
+        <p><b>Click <a href="/assets/features/Scott's%20Rob%20Roy.pdf" target="_blank">here</a>
           to see the screenplay <em>still under development</em></b></p>
       </div>
     </div>

@@ -109,7 +109,7 @@ export default {
             "After his father's business is attacked, Frank races to Scotland to find the culprit."
           ],
           episodeList: [],
-          screenplayLink: "https://www.dropbox.com/s/rssv60ipgvc7dsk/Scott%27s%20Rob%20Roy.pdf?dl=0",
+          screenplayLink: "/assets/features/Scott's%20Rob%20Roy.pdf",
           onGoing: true
         },
       ]
