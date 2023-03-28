@@ -115,7 +115,7 @@
 import formConstraints from '../../functions/email.config.json';
 import LoadingSpinner from "@/components/LoadingSpinner.vue";
 
-const mailService = "https://us-central1-daily-d-7b01b.cloudfunctions.net/sendMail"
+const mailService = " https://us-central1-scottland-dramas.cloudfunctions.net/sendMail"
 
 export default {
   name: "Contact",

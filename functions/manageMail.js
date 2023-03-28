@@ -31,7 +31,6 @@
 'use strict';
 
 const functions = require('firebase-functions');
-const logger = require("firebase-functions/lib/logger");
 // the following 2 need appropriate npm install ...
 const nodemailer = require('nodemailer');
 const emailValidator = require('email-validator')
@@ -54,12 +53,12 @@ exports.sendMail = functions.https.onRequest((inputRequest, outputResponse) => {
             outputResponse.status(204).send('');
             return
         case 'POST':
-            logger.info("------------------ the real request  -----------------------")
+            functions.logger.info("------------------ the real request  -----------------------")
             // ToDo: make use of the time-stamp to try an further reduce the possibility of spam
 
             if (!Object.keys(inputRequest.body).length) {
-                logger.log("There appears to be no body given in the request")
-                logger.log(`Request: [${JSON.stringify(inputRequest)}]`)
+                functions.logger.log("There appears to be no body given in the request")
+                functions.logger.log(`Request: [${JSON.stringify(inputRequest)}]`)
                 outputResponse.status(400).send("Input, input. I need input!")
                 return
             }
@@ -111,26 +110,26 @@ exports.sendMail = functions.https.onRequest((inputRequest, outputResponse) => {
             // so we are confident that we have the mechanism in place. Let's see if we are in a testing situation
             if (map.get("name") === "Teddy the special tester") {
                 if (map.get("subject") === "Pretend that you liked this message") {
-                    logger.log("Asked for a success message")
+                    functions.logger.log("Asked for a success message")
                     outputResponse.status(200).send('Thank you Ted., that was nice.');
                     return
                 } else {
                     const matched = map.get("subject").match(/^Give me a (\d+)$/i)
                     if (matched) {
-                        logger.log(`Asked to send back ${matched[1]}`)
+                        functions.logger.log(`Asked to send back ${matched[1]}`)
                         outputResponse.status(matched[1]).send('OK Ted., you asked for it.');
                         return
                     }
                 }
             }
-            logger.info(`Sending to ${functions.config().email.host}:${functions.config().email.port}, as user ${functions.config().email.user}`)
-            logger.log(`Sending [${data}]`)
+            functions.logger.info(`Sending to ${functions.config().email.host}:${functions.config().email.port}, as user ${functions.config().email.user}`)
+            functions.logger.log(`Sending [${data}]`)
 
             // OK, so we are in the real world. Lets get on with it then
             // noinspection JSUnusedLocalSymbols
             transporter.sendMail(data)
                 .then(r => {
-                    logger.log("Back from the send, and it looks good. Got this [" + JSON.stringify(r) + "]")
+                    functions.logger.log("Back from the send, and it looks good. Got this [" + JSON.stringify(r) + "]")
                     outputResponse.status(200).send('Success');
                 })
                 .catch(e => {
@@ -201,10 +200,10 @@ function verifyStringSyntax(variable, regexp) {
 }
 
 function logProblem(inputRequest, specifics) {
-    logger.debug("--------------------------------------------------------")
-    logger.debug(`Entries:${Object.entries(inputRequest.body)}:`)
-    logger.debug(`Keys:${Object.keys(inputRequest.body)}:`)
-    logger.debug(`Val:${Object.values(inputRequest.body)}:`)
-    logger.error(`Failure: ${specifics}`)
-    logger.debug("--------------------------------------------------------")
+    functions.logger.debug("--------------------------------------------------------")
+    functions.logger.debug(`Entries:${Object.entries(inputRequest.body)}:`)
+    functions.logger.debug(`Keys:${Object.keys(inputRequest.body)}:`)
+    functions.logger.debug(`Val:${Object.values(inputRequest.body)}:`)
+    functions.logger.error(`Failure: ${specifics}`)
+    functions.logger.debug("--------------------------------------------------------")
 }
