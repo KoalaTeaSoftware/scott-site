@@ -16,11 +16,12 @@
           no fees) to come up from Dorset for a fortnight of pre-production and a week of production.
         </p>
         <p> Any monies left over from making Wandering Willies' Tale will go towards the costs of developing our first
-          feature, <strong>Scott's Rob Roy</strong>, in 2025.
+          feature, <strong>Scott's&nbsp;Rob&nbsp;Roy</strong>, in 2025.
         </p>
+        <p><b>Click <a href="/assets/shorts/Wandering%20Willie's%20Tale.pdf" target="_blank">here</a>
+          to see the screenplay <em>still under development</em></b></p>
       </div>
     </div>
-
   </div>
 </template>
 
