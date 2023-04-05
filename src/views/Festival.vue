@@ -1,6 +1,6 @@
 <template>
   <div class="container" id="festival">
-    <h1>2023: The Rob Roy Festival</h1>
+    <h1>The 2023 Scottland section of the Period Brit Lit. Film Festival</h1>
 
     <div class="row align-items-center">
       <p class="lead">
