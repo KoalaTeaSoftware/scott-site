@@ -8,11 +8,10 @@
       <div class="col">
         <h2>Scott's Rob Roy</h2>
         <p>
-          The first feature film the Scottland Dramas Project is adapting and producing is <strong>Rob Roy</strong>
-          (2025).
+          The first feature film the Scottland Dramas Project is adapting and producing is <strong>Rob Roy</strong>.
         </p>
         <p>The Project is then moving on to the rest of Scott's 'Scottish novels', such as,
-          <strong>Guy Mannering</strong> (2026), followed by <strong>Waverly</strong> (2027). etc. Our tenth feature
+          <strong>Guy Mannering</strong>, followed by <strong>Waverly</strong>. etc. Our tenth feature
           film, in this Scott film cycle, will be our tragic musical,
           <strong>The Bride of Lammermoor</strong>. This will be our our only musical film, however.
         </p>

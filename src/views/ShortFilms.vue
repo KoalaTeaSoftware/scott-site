@@ -11,7 +11,7 @@
           paid his yearly rent. Steenie has problems persuading people to believe him, however ... and then things get
           very strange, indeed.
         </p>
-        <p>We will be making this 'concept' short film as a 'no budget' short, in summer '24, working with other
+        <p>We will be making this 'concept' short film as a 'no budget' short, working with other
           volunteers, if we can pre-sell enough DVDs / downloads to cover Ann-Marie and Rose's expenses (expenses only:
           no fees) to come up from Dorset for a fortnight of pre-production and a week of production.
         </p>
