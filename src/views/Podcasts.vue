@@ -43,9 +43,11 @@ for this to give no pain.
                       </audio>
                     </div>
                   </div>
-                  <p v-if="book.screenplayLink"><b>Click
-                    <a :href="book.screenplayLink" target="_blank" >here</a>
-                    to see the screenplay <span v-if="book.onGoing"><em>still under development</em> </span> </b></p>
+                  <p v-if="book.screenplayLink">
+                    <b><a :href="book.screenplayLink" target="_blank">Click here to see the screenplay</a>
+                      <span v-if="book.screenplayLink && book.onGoing"><em> NOTE: this is still under development</em> </span>
+                    </b>
+                  </p>
                 </div>
                 <!-- end info for this book -->
               </div>
@@ -96,8 +98,8 @@ export default {
             "When he comes back to Scotland to court his love, he does not realise that he has previously met her forbidding father."
           ],
           episodeList: [],
-          screenplayLink: "",
-          onGoing: false
+          screenplayLink: "https://www.dropbox.com/s/5fu8dhe4alo58qu/Guy%20Mannering.pdf?dl=0",
+          onGoing: true
         },
         {
           displayGroup: 1,
@@ -123,7 +125,7 @@ export default {
         .then(data => {
               // all of the interesting blobs in the feed are called items, so get a list of them
               // intellij does not understand that this selector is working on the data from the feed, so it complains. It is OK, however
-              const itemList = data.querySelectorAll('item')
+              const itemList = data.querySelectorAll("item")
               itemList.forEach(item => {
                 try {
                   // use the * 1 to turn it into a number (I forget why, but I think that this is the reason for it)
@@ -175,7 +177,7 @@ export default {
       margin: 0.5em 0.25em 0.25em;
 
       h3 {
-        text-align: unset!important;
+        text-align: unset !important;
         font-weight: bold;
 
         .dueDate {

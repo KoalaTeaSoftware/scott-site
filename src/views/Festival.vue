@@ -51,7 +51,7 @@
           </tr>
           <tr>
             <td>
-              Upload your film <em>to the link that will go live in April 2023</em></td>
+              Upload your film <em>to the link that will go live in summer 2023</em></td>
           </tr>
         </table>
         <h2>How to vote</h2>

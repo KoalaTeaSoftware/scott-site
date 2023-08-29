@@ -30,7 +30,7 @@
         <p>
           Rose has already started her Wessex Dramas project (2022) which has made one Thomas Hardy feature film and
           three seasons of audio dramas
-          (<a href="https://thedailydilettante.com/podcasts" target="_blank">https://thedailydilettante.com/podcasts</a>).
+          (<a href="https://wessexdramas.org/podcasts" target="_blank">https://wessexdramas.org/podcasts</a>).
           Rose hopes to work with different Scottish charities and their members, as she does in Dorset. So, these
           Scottland films will be 95% Scottish, in terms of source material, locations, casts, and crews.
         </p>

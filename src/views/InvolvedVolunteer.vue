@@ -24,9 +24,8 @@
         <p class="lead">Writing</p>
         <p>You could help by writing some of Scott's short story screen adaptations (help will be given). When we have
           acquired (the copyright remains yours) four, or more 'possible' scripts, these could be aggregated together to
-          make a dramatic podcast season (see our other project:
-          <a href="https://thedailydilettante.com/podcasts" target="_blank">The Thomas Hardy project</a>) which
-          would then be enacted and podcasted.
+          make a dramatic podcast season which would then be enacted and podcast.(see our other project:
+          <a href="https://wessexdramas.org/podcasts" target="_blank">The Wessex Dramas Project</a>)
         </p>
         <p class="lead">Actors, Crew and Helpers</p>
         <p>
