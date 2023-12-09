@@ -69,7 +69,7 @@ export default {
   name: "podcasts",
   data() {
     return {
-      feed: 'https://feeds.libsyn.com/431487/rsssssss',
+      feed: 'https://feeds.libsyn.com/497673/rss',
       headings: [
         "Audio Plays for 2024",
         "Audio Plays for 2023",
@@ -77,7 +77,7 @@ export default {
       bookList: [
         {
           displayGroup: 0,
-          seasonNumber: 1,
+          seasonNumber: 0,
           title: "Waverley",
           poster: "movie-poster-waverley.jpg",
           dueDate: "Starts Oct. 2024",
@@ -90,7 +90,7 @@ export default {
         },
         {
           displayGroup: 0,
-          seasonNumber: 2,
+          seasonNumber: 0,
           title: "Guy Mannering",
           poster: "movie-poster-guy-mannering.jpg",
           dueDate: "Starts Mar. 2024",
@@ -103,12 +103,13 @@ export default {
         },
         {
           displayGroup: 1,
-          seasonNumber: 3,
+          seasonNumber: 1,
           title: "Scott's Rob Roy",
           poster: "movie-poster-rob-roy.jpg",
           dueDate: "Starts Nov. 2023.",
-          synopsis: ["Frank unwilling to join his father's business is banished to Northumberland.",
-            "After his father's business is attacked, Frank races to Scotland to find the culprit."
+          synopsis: [
+            "Frank, unwilling to join his father's business, is banished to his uncle's estate in C18th Northumberland.",
+            "After his father's business is attacked, Frank races to Scotland to find the culprit, where he is helped by the Scottish folk hero, Rob Roy McGregor."
           ],
           episodeList: [],
           screenplayLink: "/assets/features/Scott's%20Rob%20Roy.pdf",
@@ -125,7 +126,7 @@ export default {
         .then(data => {
               // all of the interesting blobs in the feed are called items, so get a list of them
               // intellij does not understand that this selector is working on the data from the feed, so it complains. It is OK, however
-              const itemList = data.querySelectorAll("item")
+              const itemList = data.querySelectorAll('item')
               itemList.forEach(item => {
                 try {
                   // use the * 1 to turn it into a number (I forget why, but I think that this is the reason for it)
