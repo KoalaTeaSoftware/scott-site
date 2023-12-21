@@ -16,9 +16,6 @@ talk to it (which seems to be a challenge too big to enjoy), pass it a dynamic p
       <div class="navbar-nav m-auto">
         <RouterLink to="/" class="nav-item active">Welcome</RouterLink>
         <RouterLink class="nav-item" to="/podcasts">Podcasts</RouterLink>
-        <RouterLink class="nav-item" to="/shorts">Short Film</RouterLink>
-        <RouterLink class="nav-item" to="/features">Feature Films</RouterLink>
-        <RouterLink class="nav-item" to="/festival">Festival</RouterLink>
         <RouterLink class="nav-item" to="/about">About</RouterLink>
         <a class="nav-item dropdown">
           <a class="nav-item dropdown-toggle" id="getInvolved" data-bs-toggle="dropdown" aria-expanded="false">Get

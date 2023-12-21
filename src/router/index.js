@@ -33,24 +33,9 @@ const router = createRouter({
             component: () => import("../views/InvolvedFriend.vue")
         },
         {
-            path: "/shorts",
-            name: "ShortFilms",
-            component: () => import("../views/ShortFilms.vue")
-        },
-        {
-            path: "/features",
-            name: "WessexFeatures",
-            component: () => import("../views/FeatureFilms.vue")
-        },
-        {
             path: "/podcasts",
             name: "WessexPodcasts",
             component: () => import("../views/Podcasts.vue")
-        },
-        {
-            path: "/festival",
-            name: "Festival",
-            component: () => import("../views/Festival.vue")
         },
         {
             path: "/register",

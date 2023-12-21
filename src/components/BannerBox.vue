@@ -12,7 +12,7 @@
             <img src="/assets/medallion.gif" alt="a medallion" class="img-fluid" style="padding-right: 0;">
           </div>
           <div class="col m-auto pl-0" id="log-line">
-            Ten feature films in ten years
+            Ten Walter Scott feature films
           </div>
           <div class="col-1">
             <img src="/assets/medallion.gif" alt="a medallion" class="img-fluid" style="padding-left: 0;">
