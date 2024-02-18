@@ -71,29 +71,42 @@ export default {
     return {
       feed: 'https://feeds.libsyn.com/497673/rss',
       headings: [
-        "Audio Plays for 2024",
-        "Audio Plays for 2023",
+        "Audio Plays for 2024 / 2025",
+        "Audio Plays for 2023 / 2024",
       ],
       bookList: [
         {
           displayGroup: 0,
           seasonNumber: 0,
-          title: "Waverley",
-          poster: "movie-poster-waverley.jpg",
-          dueDate: "Starts Oct. 2024",
-          synopsis: ["Edward Waverley, an English gentleman of honour, has an officer's commission in the army.",
-            "He is on holiday with family friends in Scotland when Jacobite uprising of 1745 challenges his honour and loyalty."
+          title: "The Pirate",
+          poster: "movie-poster-the-pirate.jpg",
+          dueDate: "Starts early 2025",
+          synopsis: ["In the early 17th century, a young man moves with his strangely withdrawn father to the isle of Zetland.",
+            "There he meets the Udaller's two daughters, and rescues a young sailor from the sea.",
+              "The young sailor takes against his rescuer and people start going missing."
           ],
           episodeList: [],
-          screenplayLink: "",
-          onGoing: false
+          screenplayLink: "https://www.dropbox.com/scl/fi/09w5mcrtvznrrom7pexmt/the-pirate.pdf?rlkey=daf636yygodtt8ssj9kbjz0qc&dl=0",
+          onGoing: true
+        },        {
+          displayGroup: 0,
+          seasonNumber: 0,
+          title: "Waverley",
+          poster: "movie-poster-waverley.jpg",
+          dueDate: "Starts late 2024",
+          synopsis: ["Edward Waverley, an English gentleman of honour, has an officer's commission in the army.",
+            "He is on holiday with family friends in Scotland when the Jacobite uprising of 1745 challenges his honour and loyalty."
+          ],
+          episodeList: [],
+          screenplayLink: "https://www.dropbox.com/scl/fi/fezmxry5lmzrh7yq6sh1a/Waverley-D1-R1.pdf?rlkey=bqibr1jvca8u9b9ti0c2ibojx&dl=0",
+          onGoing: true
         },
         {
           displayGroup: 0,
           seasonNumber: 0,
           title: "Guy Mannering",
           poster: "movie-poster-guy-mannering.jpg",
-          dueDate: "Starts Mar. 2024",
+          dueDate: "Starts mid 2024",
           synopsis: ["Harry Bertram, son of the Laird of Ellangowan, is kidnapped as a boy by the smuggler Dirk Hatteraick and carried off to Holland.",
             "When he comes back to Scotland to court his love, he does not realise that he has previously met her forbidding father."
           ],
