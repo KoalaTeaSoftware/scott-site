@@ -86,7 +86,7 @@ export default {
               "The young sailor takes against his rescuer and people start going missing."
           ],
           episodeList: [],
-          screenplayLink: "https://www.dropbox.com/scl/fi/09w5mcrtvznrrom7pexmt/the-pirate.pdf?rlkey=daf636yygodtt8ssj9kbjz0qc&dl=0",
+          screenplayLink: "https://www.dropbox.com/scl/fi/wlbo7ll63usd3gnafr48i/the-pirate.pdf?rlkey=ewlnix0kr6nag440yxcvqh253&dl=0",
           onGoing: true
         },        {
           displayGroup: 0,
