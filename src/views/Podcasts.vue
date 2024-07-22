@@ -44,8 +44,16 @@ for this to give no pain.
                     </div>
                   </div>
                   <p v-if="book.screenplayLink">
-                    <b><a :href="book.screenplayLink" target="_blank">Click here to see the screenplay</a>
-                      <span v-if="book.screenplayLink && book.onGoing"><em> NOTE: this is still under development</em> </span>
+                    <b>
+                      <a :href="book.screenplayLink" target="_blank">Click here to see the screenplay</a>
+                      <span v-if="book.onGoing"><em> NOTE: this is still under development</em> </span>
+                    </b>
+                  </p>
+                  <p v-else>
+                    <b>
+                      <a :href="`/contact?subject=I would like to read the screenplay of ${book.title}`" target="_blank">
+                      Contact us to read the screenplay</a>
+                      <span v-if=" book.onGoing"><em> NOTE: this is still under development</em> </span>
                     </b>
                   </p>
                 </div>
@@ -86,8 +94,8 @@ export default {
               "The young sailor takes against his rescuer and people start going missing."
           ],
           episodeList: [],
-          screenplayLink: "https://www.dropbox.com/scl/fi/wlbo7ll63usd3gnafr48i/the-pirate.pdf?rlkey=ewlnix0kr6nag440yxcvqh253&dl=0",
-          onGoing: true
+          screenplayLink: "",
+          onGoing: false
         },        {
           displayGroup: 0,
           seasonNumber: 0,
@@ -98,8 +106,8 @@ export default {
             "He is on holiday with family friends in Scotland when the Jacobite uprising of 1745 challenges his honour and loyalty."
           ],
           episodeList: [],
-          screenplayLink: "https://www.dropbox.com/scl/fi/fezmxry5lmzrh7yq6sh1a/Waverley-D1-R1.pdf?rlkey=bqibr1jvca8u9b9ti0c2ibojx&dl=0",
-          onGoing: true
+          screenplayLink: "",
+          onGoing: false
         },
         {
           displayGroup: 0,
@@ -111,8 +119,8 @@ export default {
             "When he comes back to Scotland to court his love, he does not realise that he has previously met her forbidding father."
           ],
           episodeList: [],
-          screenplayLink: "https://www.dropbox.com/s/5fu8dhe4alo58qu/Guy%20Mannering.pdf?dl=0",
-          onGoing: true
+          screenplayLink: "",
+          onGoing: false
         },
         {
           displayGroup: 1,
@@ -126,7 +134,7 @@ export default {
           ],
           episodeList: [],
           screenplayLink: "/assets/features/Scott's%20Rob%20Roy.pdf",
-          onGoing: true
+          onGoing: false
         },
       ]
     }
