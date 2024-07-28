@@ -3,7 +3,9 @@
     <div id="footer">
       <!-- the expand bit is vital to cause it to be inline -->
       <nav class="navbar  navbar-expand-sm">
+        <span id="notice" class="navbar-brand ">All screenplays &copy; of the author(s). All right Reserved</span>
         <div class="navbar-nav">
+
           <!-- anchor tags are fatal to the session, so use router links -->
           <RouterLink to="/policies" class="nav-item active">Policies</RouterLink>
           <RouterLink to="/contact" class="nav-item">Contact</RouterLink>
@@ -76,6 +78,12 @@ export default {
     #logoutLink:hover {
       cursor: pointer;
     }
+  }
+  #notice{
+    color: $colour-banner-primary-text;
+    margin-left: 1em;
+    font-size: small;
+    //float: left;
   }
 }
 
