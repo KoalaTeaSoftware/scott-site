@@ -12,7 +12,7 @@
             <img src="/assets/medallion.gif" alt="a medallion" class="img-fluid" style="padding-right: 0;">
           </div>
           <div class="col m-auto pl-0" id="log-line">
-            Ten Walter Scott feature films
+            Ten Walter Scott audio dramas
           </div>
           <div class="col-1">
             <img src="/assets/medallion.gif" alt="a medallion" class="img-fluid" style="padding-left: 0;">
@@ -89,6 +89,8 @@ export default {
       border-color: $colour-page-background;
 
       .navbar-toggler-icon {
+        // IJ is unable to resolve this path, but it works
+        //noinspection CssUnknownTarget
         background-image: url("/assets/hamburger.svg");
       }
 
