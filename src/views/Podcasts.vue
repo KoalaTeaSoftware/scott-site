@@ -133,7 +133,7 @@ export default {
             "After his father's business is attacked, Frank races to Scotland to find the culprit, where he is helped by the Scottish folk hero, Rob Roy McGregor."
           ],
           episodeList: [],
-          screenplayLink: "/assets/features/Scott's%20Rob%20Roy.pdf",
+          screenplayLink: "https://www.dropbox.com/scl/fi/tku92h9evxncxvdpft6gq/Scott-s-Rob-Roy.pdf?rlkey=5vr720sl1juivsfsfq3h7jekd&dl=0",
           onGoing: false
         },
       ]
