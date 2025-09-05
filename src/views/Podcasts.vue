@@ -26,7 +26,8 @@ for this to give no pain.
                 </div>
 
                 <div class="bookInfo col">
-                  <h3 class="mt-0">{{ book.title }}<span class="dueDate">({{ book.dueDate }})</span></h3>
+                  <h3 class="mt-0">{{ book.title }}
+                    <span class="dueDate" v-if="book.dueDate !== ''">({{ book.dueDate }})</span></h3>
                   <p v-for="para in book.synopsis" class="card-text book_synopsis">{{ para }}</p>
 
                   <div class="seasonPodcastList card-group">
@@ -51,7 +52,8 @@ for this to give no pain.
                   </p>
                   <p v-else>
                     <b>
-                      <a :href="`/contact?subject=I would like to read the screenplay of ${book.title}`" target="_blank">
+                      <a :href="`mailto:info@scottlanddramas.org?subject=I would like to read the screenplay of ${book.title}`">
+                      <!--a :href="`/contact?subject=I would like to read the screenplay of ${book.title}`" target="_blank"-->
                       Contact us to read the screenplay</a>
                       <span v-if=" book.onGoing"><em> NOTE: this is still under development</em> </span>
                     </b>
@@ -73,6 +75,7 @@ for this to give no pain.
 <script>
 
 // This is, currently, based on the DD feed's url;
+// This data is in two display groups - see the headings array
 export default {
   name: "podcasts",
   data() {
@@ -84,6 +87,20 @@ export default {
       ],
       bookList: [
         {
+          displayGroup: 0,
+          seasonNumber: 0,
+          title: "The Bride of Lammermoor",
+          poster: "movie-poster-bride-of-lammermoor.jpg",
+          dueDate: "",
+          synopsis: ["The Bride of Lammermoor is a historical novel by Sir Walter Scott, published in 1819, one of the Waverley novels.",
+            "It tells of a tragic love affair between young Lucy Ashton and her family's enemy Edgar Ravenswood.",
+            "Scott indicated the plot was based on an actual incident.",
+            "ASOP has adapted this tale for performance as a tragic musical using Scottish and other celtic folk songs"
+          ],
+          episodeList: [],
+          screenplayLink: "",
+          onGoing: false
+        },{
           displayGroup: 0,
           seasonNumber: 0,
           title: "The Pirate",

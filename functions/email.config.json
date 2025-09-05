@@ -5,7 +5,7 @@
   "emailLengthMin": 1,
   "emailLengthMax": 50,
   "subjectLengthMin": 5,
-  "subjectLengthMax": 50,
+  "subjectLengthMax": 75,
   "subjectRegexp": "^[\\£a-zA-Z0-9\\., \\-]+$",
   "msgLengthMin": 10,
   "msgLengthMax": 500,
