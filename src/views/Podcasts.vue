@@ -12,10 +12,10 @@ for this to give no pain.
 
 <template>
   <div class="container" id="podcasts">
-    <h1>Podcasts</h1>
+    <h1>Podcasted Audio Dramas</h1>
 
     <div class="bookGroup" v-for="index in [0,1]">
-      <h2>{{ headings[index] }}</h2>
+<!--      <h2>{{ headings[index] }}</h2>-->
       <div v-for="book in bookList">
         <div v-if="book.displayGroup === index">
           <div class="bookDetails card series">
@@ -27,7 +27,8 @@ for this to give no pain.
 
                 <div class="bookInfo col">
                   <h3 class="mt-0">{{ book.title }}
-                    <span class="dueDate" v-if="book.dueDate !== ''">({{ book.dueDate }})</span></h3>
+<!--                    <span class="dueDate" v-if="book.dueDate !== ''">({{ book.dueDate }})</span-->
+                  </h3>
                   <p v-for="para in book.synopsis" class="card-text book_synopsis">{{ para }}</p>
 
                   <div class="seasonPodcastList card-group">

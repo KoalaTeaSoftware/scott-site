@@ -8,13 +8,13 @@
 
           <!-- anchor tags are fatal to the session, so use router links -->
           <RouterLink to="/policies" class="nav-item active">Policies</RouterLink>
-          <RouterLink to="/contact" class="nav-item">Contact</RouterLink>
-
-          <a v-if="amLoggedIn" id="logoutLink" class="nav-item" @click="logOut">Log Out</a>
+          <a href="mailto:info@scottlanddramas.org" class="nav-item">Contact</a>
+<!--          <RouterLink to="/contact" class="nav-item">Contact</RouterLink>-->
+<!--          <a v-if="amLoggedIn" id="logoutLink" class="nav-item" @click="logOut">Log Out</a>
           <RouterLink v-else to="/sign-in" class="nav-item">Sign In</RouterLink>
 
           <RouterLink v-if="amLoggedIn" to="/register" class="nav-item">Register</RouterLink>
-          <RouterLink v-if="amLoggedIn" to="/authorise" class="nav-item">Roles</RouterLink>
+          <RouterLink v-if="amLoggedIn" to="/authorise" class="nav-item">Roles</RouterLink>-->
         </div>
       </nav>
     </div>
